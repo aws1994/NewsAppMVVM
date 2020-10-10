@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="attr_declar">
+
+        <attr name="background_color" format="color" />
+        <attr name="text_color" format="color" />
+
+
+    </declare-styleable>
+
+
+</resources>
