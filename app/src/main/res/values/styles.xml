@@ -12,11 +12,13 @@
 <!--    here we define dark theme style -->
     <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar" >
 
-        <item name="colorPrimary">@color/dark_primary_color</item>
+        <item name="colorPrimary">@color/colorAccent</item>
         <item name="colorPrimaryDark">@color/dark_primary_dark_color</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="text_color">@color/dark_text_color</item>
         <item name="background_color">@color/dark_bg_color</item>
+        <item name="android:textColorSecondary">@color/dark_icon_tint_color</item>
+
 
 
     </style>

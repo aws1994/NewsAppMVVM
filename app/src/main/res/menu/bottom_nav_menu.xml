@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/newsListFragment"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_news_24"/>
+
+        <item android:id="@+id/newsListFav"
+            android:title="Fav"
+            android:icon="@drawable/ic_baseline_favorite_24"/>
+
+        <item android:id="@+id/newsListSearch"
+            android:title="Search"
+            android:icon="@drawable/ic_baseline_search_24" />
+
+        <item android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/ic_baseline_settings_24" />
+
+
+</menu>
