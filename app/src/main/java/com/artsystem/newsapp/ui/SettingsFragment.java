@@ -1,4 +1,4 @@
-package com.artsystem.newsapp;
+package com.artsystem.newsapp.ui;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.artsystem.newsapp.R;
 
-public class NewsDetailsFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
 
-    public NewsDetailsFragment() {
+    public SettingsFragment() {
         // Required empty public constructor
     }
+
 
 
     @Override
@@ -26,6 +28,6 @@ public class NewsDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_news_details, container, false);
+        return inflater.inflate(R.layout.fragment_settings, container, false);
     }
 }

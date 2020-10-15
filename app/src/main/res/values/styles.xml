@@ -19,7 +19,5 @@
         <item name="background_color">@color/dark_bg_color</item>
         <item name="android:textColorSecondary">@color/dark_icon_tint_color</item>
 
-
-
     </style>
 </resources>
