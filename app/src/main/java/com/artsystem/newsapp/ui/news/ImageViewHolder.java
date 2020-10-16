@@ -10,12 +10,17 @@ import com.artsystem.newsapp.databinding.ItemNewsTextBinding;
 
 public class ImageViewHolder extends BaseViewHolder {
 
-    public ImageViewHolder(@NonNull View itemView) {
-        super(itemView);
+    ItemNewsImageBinding itemNewsImageBinding;
+
+    public ImageViewHolder(@NonNull ItemNewsImageBinding itemNewsImageBinding) {
+        super(itemNewsImageBinding.getRoot());
+        this.itemNewsImageBinding = itemNewsImageBinding;
     }
 
     @Override
     public void bindData(NewsItem item) {
+
+        itemNewsImageBinding.setNewsItemImage(item);
 
     }
 

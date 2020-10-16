@@ -10,12 +10,17 @@ import com.artsystem.newsapp.databinding.ItemNewsTextBinding;
 
 public class TextViewHolder extends BaseViewHolder {
 
-    public TextViewHolder(@NonNull View itemView) {
-        super(itemView);
+    ItemNewsTextBinding itemNewsTextBinding;
+
+    public TextViewHolder(@NonNull ItemNewsTextBinding itemNewsTextBinding) {
+        super(itemNewsTextBinding.getRoot());
+        this.itemNewsTextBinding = itemNewsTextBinding;
     }
 
     @Override
     public void bindData(NewsItem item) {
+
+        itemNewsTextBinding.setNewsItemText(item);
 
     }
 
