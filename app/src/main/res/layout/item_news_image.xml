@@ -20,7 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="250dp">
 
+<!--            to bind Image View using DataBinding we need to create a custom-->
+<!--            Binding Adapter
+                I'll show you how to do that    -->
+
             <ImageView
+                glide_url="@{NewsItemImage.newsImg}"
                 android:scaleType="centerCrop"
                 android:id="@+id/item_news_img_newsimg"
                 android:layout_width="0dp"
@@ -29,7 +34,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -41,7 +46,12 @@
                 app:srcCompat="#FFC107"
                 android:alpha="0.9"/>
 
+<!--            we can use the same adapter to load the user image
+                but we want the user image to be circular
+                we can create another adapter to do that -->
+
             <ImageView
+                glide_circular="@{NewsItemImage.userImage}"
                 android:id="@+id/item_news_img_userimg"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
@@ -53,6 +63,7 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
+                android:text="@{NewsItemImage.title}"
                 android:textColor="@color/dark_text_color"
                 android:id="@+id/item_news_img_title"
                 android:layout_width="0dp"
@@ -61,20 +72,19 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                android:text="TextView"
                 app:layout_constraintBottom_toTopOf="@+id/item_news_img_userimg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
             <TextView
+                android:text="@{NewsItemImage.username}"
                 android:textColor="@color/dark_text_color"
                 android:id="@+id/item_news_img_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="@+id/item_news_img_userimg"
                 app:layout_constraintStart_toEndOf="@+id/item_news_img_userimg"
                 app:layout_constraintTop_toTopOf="@+id/item_news_img_userimg" />
