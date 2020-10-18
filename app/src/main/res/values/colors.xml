@@ -5,6 +5,14 @@
     <color name="colorAccent">#03DAC5</color>
 
 
+<!--    news image background colors -->
+    <color name="purple">#905EE8</color>
+    <color name="red">#F96335</color>
+    <color name="black">#1E1E1E</color>
+    <color name="blue">#008DFC</color>
+    <color name="yellow">#FED149</color>
+
+
 <!--    // dark theme colors-->
     <color name="dark_primary_color">#141414</color>
     <color name="dark_primary_dark_color">#141414</color>

@@ -4,6 +4,7 @@ import android.widget.ImageView;
 
 import androidx.databinding.BindingAdapter;
 
+import com.artsystem.newsapp.R;
 import com.bumptech.glide.Glide;
 
 public class BindingAdapters {
@@ -25,5 +26,24 @@ public class BindingAdapters {
 
     }
 
+
+    @BindingAdapter("set_background")
+    public static void setBackground(ImageView view,String color) {
+
+        switch (color) {
+            case "RED" : view.setBackgroundColor(view.getContext().getResources().getColor(R.color.red));
+            break;
+            case "BLACK" : view.setBackgroundColor(view.getContext().getResources().getColor(R.color.black));
+            break;
+            case "YELLOW" : view.setBackgroundColor(view.getContext().getResources().getColor(R.color.yellow));
+            break;
+            case "BLUE" : view.setBackgroundColor(view.getContext().getResources().getColor(R.color.blue));
+            break;
+            case "PURPLE" : view.setBackgroundColor(view.getContext().getResources().getColor(R.color.purple));
+            break;
+            default: view.setBackgroundColor(view.getContext().getResources().getColor(R.color.red));
+        }
+
+    }
 
 }
