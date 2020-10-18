@@ -5,12 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".ui.NewsListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
-        android:textColor="?attr/text_color"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="News List Fragment" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </FrameLayout>

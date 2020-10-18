@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/newsListFragment"
-        android:name="com.artsystem.newsapp.ui.NewsDetailsFragment"
-        android:label="fragment_news_details"
+        android:name="com.artsystem.newsapp.ui.NewsListFragment"
+        android:label="fragment_news_list"
         tools:layout="@layout/fragment_news_details" />
     <fragment
         android:id="@+id/newsListFav"
