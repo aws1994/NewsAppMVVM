@@ -1,16 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.NewsDetailsFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:gravity="center"
-        android:textColor="?attr/text_color"
+    <data>
+
+        <variable
+            name="NewsItemData"
+            type="com.artsystem.newsapp.data.NewsItem" />
+
+
+    </data>
+
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="?attr/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.NewsDetailsFragment">
+
+
+            <ImageView
+                glide_url="@{NewsItemData.newsImg}"
+                android:scaleType="centerCrop"
+                android:id="@+id/details_img_news"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                glide_circular="@{NewsItemData.userImage}"
+                android:id="@+id/details_img_user"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/details_img_news"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_img_news"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:text="@{NewsItemData.title}"
+                android:textColor="?attr/text_color"
+                android:textSize="36sp"
+                android:lineSpacingExtra="4sp"
+                android:id="@+id/details_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_img_user" />
+
+            <TextView
+                android:text="@{NewsItemData.username}"
+                android:textColor="@color/blue"
+                android:id="@+id/details_username_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_title" />
+
+
+<!--         we need to toggle fav image button based on the state of the news item
+             we check if item is saved by the user
+              if it is checked we change the fav img color to red
+              if it's not we set it to gray color ...
+              to that i'll create a custom adapter
+              -->
+            <ImageView
+
+                set_checked="@{NewsItemData.fav}"
+                android:id="@+id/details_img_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                app:layout_constraintBottom_toBottomOf="@+id/details_username_date"
+                app:layout_constraintStart_toEndOf="@+id/details_username_date"
+                app:layout_constraintTop_toTopOf="@+id/details_username_date" />
+
+            <TextView
+                android:text="@{NewsItemData.content}"
+                android:textColor="?attr/text_color"
+                android:textSize="36sp"
+                android:id="@+id/details_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_username_date" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

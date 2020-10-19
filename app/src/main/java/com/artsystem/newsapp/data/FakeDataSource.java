@@ -169,8 +169,10 @@ public class FakeDataSource {
     /**
      * this method generate a random news item
      */
-    public void generateRandomNewsItem(){
-        return;
+    public NewsItem generateRandomNewsItem(){
+
+        NewsItem item = new NewsItem(-1, getRandomNewsTitle(), getRandomUsername(), getRandomNewsImage(), getRandomUserImage(), getRandomContent(), getRandomBgColor(), null, 0);
+        return item;
     }
 
     // generate a random string title

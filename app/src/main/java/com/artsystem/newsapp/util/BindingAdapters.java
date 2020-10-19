@@ -2,6 +2,7 @@ package com.artsystem.newsapp.util;
 
 import android.widget.ImageView;
 
+import androidx.core.content.ContextCompat;
 import androidx.databinding.BindingAdapter;
 
 import com.artsystem.newsapp.R;
@@ -45,5 +46,18 @@ public class BindingAdapters {
         }
 
     }
+
+
+    @BindingAdapter("set_checked")
+    public static void toggleFav(ImageView view,boolean isFav){
+
+        if (isFav) {
+            view.setColorFilter(ContextCompat.getColor(view.getContext(),R.color.red));
+        }
+        else
+            view.setColorFilter(ContextCompat.getColor(view.getContext(),R.color.dark_icon_tint_color));
+    }
+
+
 
 }

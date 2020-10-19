@@ -26,4 +26,8 @@
         android:name="com.artsystem.newsapp.ui.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.artsystem.newsapp.ui.NewsDetailsFragment"
+        android:label="NewsDetailsFragment" />
 </navigation>
