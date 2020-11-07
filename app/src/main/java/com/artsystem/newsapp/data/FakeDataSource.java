@@ -77,6 +77,315 @@ public class FakeDataSource {
         return data;
     }
 
+    // generate a static list news Items
+
+    public List<NewsItem> getFakeStaticListNews(){
+
+        List<NewsItem> data = new ArrayList<>();
+        data.add(new NewsItem(
+                0,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                1,
+                TXT_TITLE_02,
+                TXT_NAME_02,
+                IMG_NEWS_02,
+                IMG_USER_02,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                2,
+                TXT_TITLE_03,
+                TXT_NAME_03,
+                IMG_NEWS_03,
+                IMG_USER_03,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                3,
+                TXT_TITLE_04,
+                TXT_NAME_04,
+                IMG_NEWS_02,
+                IMG_USER_04,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                4,
+                TXT_TITLE_05,
+                TXT_NAME_01,
+                IMG_NEWS_03,
+                IMG_USER_05,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                5,
+                TXT_TITLE_03,
+                TXT_NAME_01,
+                IMG_NEWS_02,
+                IMG_USER_03,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                0
+        ));
+
+
+        data.add(new NewsItem(
+                6,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                7,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[3],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                8,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_10,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                9,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_08,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                0
+        ));
+
+        return data;
+    }
+
+    // generate an updated static news list
+
+    public List<NewsItem> getFakeUpdatedStaticListNews(){
+        List<NewsItem> data = new ArrayList<>();
+
+        data.add(new NewsItem(
+                -4,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_10,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                -3,
+                TXT_TITLE_02,
+                TXT_NAME_02,
+                IMG_NEWS_02,
+                IMG_USER_02,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                -2,
+                TXT_TITLE_03,
+                TXT_NAME_03,
+                IMG_NEWS_07,
+                IMG_USER_03,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                -1,
+                TXT_TITLE_04,
+                TXT_NAME_04,
+                IMG_NEWS_09,
+                IMG_USER_04,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                1
+        ));
+
+
+
+        data.add(new NewsItem(
+                0,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                1,
+                TXT_TITLE_02,
+                TXT_NAME_02,
+                IMG_NEWS_02,
+                IMG_USER_02,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                2,
+                TXT_TITLE_03,
+                TXT_NAME_03,
+                IMG_NEWS_03,
+                IMG_USER_03,
+                LOREM_TEXT,
+                lstColors[0],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                3,
+                TXT_TITLE_04,
+                TXT_NAME_04,
+                IMG_NEWS_02,
+                IMG_USER_04,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                4,
+                TXT_TITLE_05,
+                TXT_NAME_01,
+                IMG_NEWS_03,
+                IMG_USER_05,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                5,
+                TXT_TITLE_03,
+                TXT_NAME_01,
+                IMG_NEWS_02,
+                IMG_USER_03,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                0
+        ));
+
+
+        data.add(new NewsItem(
+                6,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                0
+        ));
+
+        data.add(new NewsItem(
+                7,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_01,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[3],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                8,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_10,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[2],
+                new Date(),
+                1
+        ));
+
+        data.add(new NewsItem(
+                9,
+                TXT_TITLE_01,
+                TXT_NAME_01,
+                IMG_NEWS_08,
+                IMG_USER_01,
+                LOREM_TEXT,
+                lstColors[1],
+                new Date(),
+                0
+        ));
+
+        return data;
+    }
+
+
 
     private void initListNewsImages() {
         listNewsImage.add(IMG_NEWS_01);
