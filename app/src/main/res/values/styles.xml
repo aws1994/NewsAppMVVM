@@ -7,6 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="text_color" >@color/light_text_color</item>
         <item name="background_color">@color/light_bg_color</item>
+        <item name="text_hint_color">@color/dark_icon_tint_color</item>
     </style>
 
 <!--    here we define dark theme style -->
@@ -18,6 +19,7 @@
         <item name="text_color">@color/dark_text_color</item>
         <item name="background_color">@color/dark_bg_color</item>
         <item name="android:textColorSecondary">@color/dark_icon_tint_color</item>
+        <item name="text_hint_color">@color/dark_icon_tint_color</item>
 
     </style>
 </resources>
