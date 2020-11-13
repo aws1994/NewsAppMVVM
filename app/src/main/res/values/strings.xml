@@ -2,4 +2,5 @@
     <string name="app_name">NewsApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_intro">Settings Page: Choose your preferred theme: light - dark or dark amoled and costumize font type and size, any applied changes in this settings page will require you to restart the application</string>
 </resources>
